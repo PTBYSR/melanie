@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border{
+    @apply border-[1px] border-opacity-10 border-b-black
+}
+.border-b{
+    @apply border-b-[1px] border-opacity-10 border-b-black
+}
+.border-r{
+    @apply border-r-[1px] border-opacity-10 border-b-black
+}
+.border-l{
+    @apply border-l-[1px] border-opacity-10 border-b-black
+}
+.center-all{
+    justify-content: center;
+    align-items: center;
+}

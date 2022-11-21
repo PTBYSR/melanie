@@ -1,0 +1,19 @@
+.root{
+    @apply text-center
+}
+
+.heading {
+    @apply text-3xl font-semibold
+}
+
+.subHeading {
+    @apply text-3xl font-semibold
+}
+
+.sectionHeading {
+    @apply text-3xl font-semibold
+}
+
+.subSectionHeading {
+    @apply mt-2 text-sm
+}

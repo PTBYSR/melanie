@@ -1,0 +1,15 @@
+.root {
+
+}
+
+.body {
+    @apply mb-4
+}
+
+.title {
+    @apply font-light text-white text-opacity-90
+}
+
+.uList {
+    @apply flex flex-col gap-2 text-sm text-white
+}

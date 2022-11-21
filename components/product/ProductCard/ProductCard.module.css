@@ -1,0 +1,15 @@
+.root{
+    @apply relative w-fit flex flex-col items-center justify-center m-4
+}
+
+.imageContainer{
+    @apply flex justify-center items-center  
+}
+
+.header{
+    @apply w-full text-center font-semibold
+}
+
+.headerSub{
+    @apply text-xs text-gray-500 text-center
+}

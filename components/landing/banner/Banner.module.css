@@ -1,0 +1,9 @@
+.root{
+    @apply py-20 h-[450px] container mx-auto
+}
+.black{
+    @apply bg-black
+}
+.pink{
+    @apply bg-[#fff3f2] flex justify-between items-center flex-col
+}

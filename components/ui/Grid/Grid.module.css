@@ -1,0 +1,8 @@
+.root {
+    @apply flex flex-wrap gap-3 justify-center;
+  }
+  /* .root > * {
+    @apply row-span-1 bg-transparent box-border overflow-hidden;
+    height: 500px;
+    max-height: 800px;
+  } */
