@@ -12,10 +12,10 @@ const Counter = () => {
     }
 
   return (
-    <div className='w-20 h-10 flex items-center justify-around border-black border-[1px]'>
-        <button onClick={decrement}>-</button>
+    <div className='w-24 py-2 flex items-center justify-around border-black border-[1px]'>
+        <button className="text-xl font-semibold" onClick={decrement}>-</button>
         <div>{counter}</div>
-        <button onClick={increment}>+</button>
+        <button className="text-xl font-semibold" onClick={increment}>+</button>
     </div>
   )
 }

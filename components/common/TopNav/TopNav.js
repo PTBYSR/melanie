@@ -4,7 +4,7 @@ import Nav from "./Nav/Nav";
 const TopNav = () => {
   return (
     <>
-      <header className="">
+      <header className="sticky top-0 bg-[#FFF] z-[100]">
         <Header />
         <Nav />
       </header>

@@ -1,12 +1,18 @@
 import React from "react";
+import Hamburger from "../../../public/nav/icons/Hamburger";
+import Search from "../../../public/nav/icons/Search";
+import User from "../../../public/nav/icons/User";
 
 const Header = () => {
   return (
-    <div className="border-b">
+    <div className="border-b  z-[100]">
         <div className="container mx-auto mt-1 flex h-14 items-center justify-between ">
-          <div className="">ham</div>
-          <div className="">Canopy .</div>
-          <div className="">search user</div>
+          <div className=""><Hamburger color="#0D0D0D" size={30}/></div>
+          <div className="text-2xl">Canopy .</div>
+          <div className="flex gap-5">
+            <Search color="#333333" size={25} />
+            <User color="#0D0D0D" size={25} />
+          </div>
         </div>
     </div>
   );

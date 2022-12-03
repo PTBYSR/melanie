@@ -6,7 +6,7 @@ const DiscoverCards = () => {
 const cards = generateDiscoverAssets()
 
   return (
-    <div className="flex pt-14 w-full">
+    <div className="flex md:flex-row flex-col pt-14 w-full">
         {
             cards.map((card, idx) => (
                 <DiscoverCard card={card} key={idx}/>

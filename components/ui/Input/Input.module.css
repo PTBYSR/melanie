@@ -1,3 +1,10 @@
 .root {
-    @apply bg-black border-[1px] md:flex-shrink-0 border-white py-3 px-5  text-white
+    @apply border-[1px] md:flex-shrink-0  py-2 px-4 
 }
+.whiteBg {
+    @apply bg-white text-black border-opacity-40 border-black
+}
+.blackBg {
+    @apply bg-black text-white
+}
+/* ifeoluwa@wordenhcd.com */

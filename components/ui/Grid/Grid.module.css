@@ -1,5 +1,5 @@
 .root {
-    @apply flex flex-wrap gap-3 justify-center;
+    @apply flex flex-wrap justify-center;
   }
   /* .root > * {
     @apply row-span-1 bg-transparent box-border overflow-hidden;

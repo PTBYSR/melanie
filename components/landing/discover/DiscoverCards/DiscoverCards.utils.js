@@ -12,21 +12,21 @@ const generateDiscoverAssets = () => {
         label: "Face",
         route: "/face",
         image: (
-            <Image src={face} layout=""   alt="pic of a face" />
+            <Image src={face}    alt="pic of a face" />
         ),
     },
     {
         label: "Lip",
         route: "/lip",
         image: (
-            <Image src={lip}  layout=""  alt="pic of lips" />
+            <Image src={lip}    alt="pic of lips" />
         ),
     },
     {
         label: "Kits",
         route: "/kits",
         image: (
-            <Image src={kits} layout=""   alt="pic of a lady" />
+            <Image src={kits}    alt="pic of a lady" />
 
         ),
     },
@@ -34,7 +34,7 @@ const generateDiscoverAssets = () => {
         label: "Eyes",
         route: "/eyes",
         image: (
-            <Image src={eyes} layout=""   alt="pic of a eyes" />
+            <Image src={eyes}    alt="pic of a eyes" />
 
         ),
     }

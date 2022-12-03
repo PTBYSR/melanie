@@ -2,19 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-.border{
-    @apply border-[1px] border-opacity-10 border-b-black
+.border {
+  @apply border-[1px] border-b-black border-opacity-10;
 }
-.border-b{
-    @apply border-b-[1px] border-opacity-10 border-b-black
+.border-b {
+  @apply border-b-[1px] border-b-black border-opacity-10;
 }
-.border-r{
-    @apply border-r-[1px] border-opacity-10 border-b-black
+.border-r {
+  @apply border-r-[1px] border-b-black border-opacity-10;
 }
-.border-l{
-    @apply border-l-[1px] border-opacity-10 border-b-black
+.border-l {
+  @apply border-l-[1px] border-b-black border-opacity-10;
 }
-.center-all{
-    justify-content: center;
-    align-items: center;
+.center-all {
+  justify-content: center;
+  align-items: center;
+}
+.cabinet {
+  font-family: "Cabinet Grotesk";
+}
+.genSans {
+    font-family: "General Sans";
+}
+.clash {
+    font-family: "Clash Grotesk";
+}
+.container {
+  padding-inline:2rem;
+}
+.top {
+  position:absolute;
+  top: calc(50% - 15px);
+  z-index: 100;
 }

@@ -7,14 +7,14 @@ body {
 
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: grey;
+  /* background: grey; */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 50px;
   color: #fff;
   font-weight: 500;
-  height: 300px;
+  /* height: 300px; */
   max-height: 100vh;
 }
 
@@ -22,6 +22,7 @@ body {
 }
 
 .number-slide2 {
+  width: 70px;
 }
 
 .number-slide3 {
@@ -36,10 +37,14 @@ body {
 .number-slide6 {
 }
 
+.thumbnail {
+  
+}
 .thumbnail .keen-slider__slide {
   font-size: 30px;
-  margin-top: 10px;
-  height: 100px;
+  /* margin-top: 10px; */
+  height: 70px;
+  /* width: 70px; */
 }
 .thumbnail .keen-slider__slide {
   cursor: pointer;

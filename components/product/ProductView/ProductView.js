@@ -2,6 +2,9 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
+import Button from "../../ui/Button";
+import CameraIcon from "../../../public/landing page/icons/CameraIcon";
+import ChevronRight from "../../../public/common/icons/ChevronRight";
 // import "./Product.css"
 
 function ThumbnailPlugin(mainRef) {
@@ -38,7 +41,6 @@ function ThumbnailPlugin(mainRef) {
 }
 
 export default function ProductView({ product }) {
-  console.log(product.images);
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
   });
@@ -46,7 +48,7 @@ export default function ProductView({ product }) {
     {
       initial: 0,
       slides: {
-        perView: 4,
+        perView: 5,
         spacing: 10,
       },
     },
@@ -55,23 +57,42 @@ export default function ProductView({ product }) {
 
   return (
     <>
-      <div className="w-[500px] min-w-[400px]">
-        <div ref={sliderRef} className="keen-slider">
+      <div className=" w-[900px] min-w-[400px] ">
+        <div className="flex relative"> 
+          <div className="rotate-180 truncate absolute left-16 top">
+            <ChevronRight color="black" size={30} />
+          </div>
+          <div ref={sliderRef} className="keen-slider">
+            {product.images.map((image, idx) => (
+              <div className={`keen-slider__slide number-slide${idx + 1}`}>
+                <div className="w-full ">
+                  <Image layout="responsive" src={image} />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="absolute truncate right-16 z-[100] top-[calc(50%-15px)]">
+            <ChevronRight className=" " color="black" size={30} />
+          </div>
+        </div>
+        <div className="mb-3 flex justify-center py-4">
+          <Button
+            variant="tryout-white"
+            type="w-m"
+            className="text-black flex items-center gap-5"
+          >
+            <CameraIcon color="#000" size="30" />
+            Try it out
+          </Button>
+        </div>
+        <div
+          ref={thumbnailRef}
+          className="keen-slider thumbnail flex justify-center"
+        >
           {product.images.map((image, idx) => (
             <div className={`keen-slider__slide number-slide${idx + 1}`}>
-              <Image 
-                src={image}
-              />
-            </div>
-          ))}
-        </div>
-        <div ref={thumbnailRef} className="border flex justify-center keen-slider thumbnail">
-        {product.images.map((image, idx) => (
-            <div className={`keen-slider__slide number-slide${idx + 1}`}>
               <div class="hover:scale-[1.07]">
-                <Image
-                  src={image}
-                />
+                <Image src={image} />
               </div>
             </div>
           ))}

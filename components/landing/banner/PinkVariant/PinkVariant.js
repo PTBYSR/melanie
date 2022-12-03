@@ -11,7 +11,7 @@ const PinkVariant = ({ root, variant }) => {
     <>
       <div className={variant}>
         <div className={clsx(root, variant)}>
-          <div>
+          <div className="mb-16">
             <Text variant="sectionHeading">
             About
               <span className="font-light"> Canopy.</span>

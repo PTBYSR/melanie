@@ -3,22 +3,28 @@ import React from 'react'
  export const generateNavItems = () => {
   return [
     {
-           link: "Shop All"     
+       route: "/allproducts",    
+       label: "All products"     
     },
     {
-           link: "Makeup"     
+       route: "/makeup",    
+       label: "Makeup"     
     },
     {
-           link: "Shop Our Sets"     
+       route: "/sets",    
+       label: "Shop Our Sets"     
     },
     {
-           link: "Find Your Shade"     
+       route: "/shade",    
+       label: "Find Your Shade"     
     },
     {
-           link: "Sale"     
+       route: "/sale",    
+       label: "Sale"     
     },
     {
-           link: "Explore"     
+       route: "/explore",    
+       label: "Explore"     
     },
   ]
 }

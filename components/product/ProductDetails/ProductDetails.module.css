@@ -1,0 +1,9 @@
+.bb {
+    @apply border-black border-b border-opacity-40 pb-5 mb-6
+}
+.header {
+    @apply mb-4 text-3xl font-semibold
+}
+.headingBb {
+    @apply font-semibold mb-4
+}

@@ -1,9 +1,9 @@
 .root{
-    @apply py-20 h-[450px] container mx-auto
+    @apply  md:h-[450px] container mx-auto
 }
 .black{
-    @apply bg-black
+    @apply py-10 md:py-[0px] md:gap-0 gap-8 bg-black flex md:flex-row flex-col
 }
 .pink{
-    @apply bg-[#fff3f2] flex justify-between items-center flex-col
+    @apply md:py-20 py-10 bg-[#fff3f2] flex justify-between items-center flex-col
 }

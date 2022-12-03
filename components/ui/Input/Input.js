@@ -2,11 +2,11 @@ import React from 'react'
 import s from './Input.module.css'
 import cn from 'clsx'
 
-const Input = ({ className }) => {
+const Input = ({ className, placeholder, variant }) => {
   return (
     <input 
-        className={cn(s.root, className)}
-        placeholder="Email"
+        className={cn(s.root, className, s[variant])}
+        placeholder={placeholder}
     />
 
   )

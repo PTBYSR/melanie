@@ -6,7 +6,8 @@ module.exports = {
       "./components/landing/**/*.{js,ts,jsx,tsx}",
       "./components/common/**/*.{js,ts,jsx,tsx}",
       "./components/ui/**/*.{js,ts,jsx,tsx}",
-  ],
+      "./public/landing page/icons/**/*.{js,ts,jsx,tsx}",
+    ],
   theme: {
     extend: {},
     screens: {

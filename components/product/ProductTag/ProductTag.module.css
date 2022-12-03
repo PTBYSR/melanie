@@ -1,0 +1,10 @@
+.root {
+}
+
+.run-low {
+  @apply bg-[#f5e4e3] w-fit py-2 px-2 rounded text-sm;
+}
+
+.best-sell {
+  @apply bg-[#f3ecda] w-fit py-2 px-2 rounded text-sm;
+}

@@ -11,7 +11,9 @@ const Discover = () => {
           Explore Your Beauty With Different Shades Of Color
         </Text>
       </div>
-        <DiscoverCards />
+        <div class="flex center-all w-full">
+          <DiscoverCards />
+        </div>
     </div>
   );
 };

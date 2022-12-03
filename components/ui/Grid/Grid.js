@@ -1,12 +1,14 @@
 import React from 'react'
 import s from './Grid.module.css'
+import cn from 'clsx'
 
 
 const Grid = ({
-    children
+    children,
+    className
 }) => {
   return (
-    <div className={s.root}>
+    <div className={cn(s.root, className)}>
         {children}
     </div>
   )
