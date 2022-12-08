@@ -9,7 +9,7 @@ import product1 from "../../public/common/product1.png";
 const product = {
   src: product1,
   name: "Duo-tone buildable Foundation",
-  type: "50 shades",
+  type: "20 shades",
   price: "$30",
   images: [product1, product1, product1],
 };
