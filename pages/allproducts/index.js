@@ -10,7 +10,6 @@ import { useRouter } from "next/router";
 import FilterBox from "../../components/ui/FilterBox";
 import Button from "../../components/ui/Button";
 
-
 export const products = [
   {
     src: product1,
@@ -99,9 +98,9 @@ const router = useRouter()
         <FilterBox />
       </div>
       <Grid className="gap-6">
-        {products.map((product) => (
+        {products.map((product, idx) => (
           <div className="border">
-            <ProductCard product={product} variant="medium" />
+            <ProductCard key={idx} product={product} variant="medium" />
           </div>
         ))}
       </Grid>

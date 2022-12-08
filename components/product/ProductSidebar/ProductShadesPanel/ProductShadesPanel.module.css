@@ -1,0 +1,6 @@
+.bb {
+    @apply border-black border-b border-opacity-40 pb-5 mb-5
+}
+.flat {
+    @apply flex gap-3
+}

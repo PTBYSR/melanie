@@ -10,7 +10,7 @@ import Button from '../../ui/Button/Button'
 const ProductDetails = ({ className }) => {
   return (
     <div className={className}>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
              
             <div className="mb-5">
               <h1 className={cn(s.header)}>Product Details</h1>
@@ -37,15 +37,7 @@ const ProductDetails = ({ className }) => {
               </ul>
               <p>Dermatologist tested, appropriate for all skin types, formulated without fragrance</p>
             </div>
-            <div>
-              //Accordion
-            </div>
-            <div>
-              //Accordion
-            </div>
-            <div>
-              //Accordion
-            </div>
+            
         </div>
         <div class="flex flex-col gap-5 mt-5">
           <div>

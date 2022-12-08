@@ -14,8 +14,8 @@ const ShowRoom = ({ title, subtitle, variant }) => {
         <Text variant="subSectionHeading">{subtitle}</Text>
         <div className="center-all mt-5 flex md:py-12">
           <Grid>
-            {products.map((product) => (
-              <ProductCard variant="large" product={product} />
+            {products.map((product, idx) => (
+              <ProductCard key={idx} variant="large" product={product} />
             ))}
           </Grid>
         </div>

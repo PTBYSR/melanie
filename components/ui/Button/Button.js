@@ -1,17 +1,20 @@
-import React from 'react'
-import s from './Button.module.css'
-import clsx from 'clsx'
-import cn from 'clsx'
-
+import React from "react";
+import s from "./Button.module.css";
+import clsx from "clsx";
+import cn from "clsx";
+import Link from "next/link";
 
 const Button = (props) => {
-  const { children, variant, type, className, style } = props
-  const Component = 'button'
+  const { children, variant, type, className, style, route = "" } = props;
+  const Component = "button";
   return (
-    <Component className={cn(className, ["root"], s[variant], s[type])}>
+    <Link href={variant === "cart" ? "/allproducts/hello" : ""}>
+      <Component style={style} className={cn(className, ["root"], s[variant], s[type])}>
         {children}
-    </Component>
-  )
-}
+        
+        </Component>
+        </Link>
+  );
+};
 
-export default Button
+export default Button;

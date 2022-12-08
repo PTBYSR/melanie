@@ -50,9 +50,9 @@ export default function Storybook() {
     <ProductTag variant="best-sell">Best Seller</ProductTag>
     <ProductView product={products[0]} />
       <Grid>
-        {products.map((product) => (
+        {products.map((product, idx) => (
           <div className="border">
-            <ProductCard product={product} variant="large" />
+            <ProductCard key={idx} product={product} variant="large" />
           </div>
         ))}
       </Grid>

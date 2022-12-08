@@ -2,27 +2,21 @@ import React from "react";
 import Button from "../../ui/Button";
 import Counter from "../../ui/Counter/Counter";
 import ProductHeader from "./ProductHeader/ProductHeader";
+import ProductShadesPanel from "./ProductShadesPanel";
 
 const ProductSidebar = ({ price }) => {
   return (
     <div className="w-full">
-    
-    <ProductHeader />
+      <ProductHeader />
 
-      {/*
-    Product Shades Panel
-    */}
+      <div>
+        <ProductShadesPanel />
+      </div>
 
-    <div>
-    
-    </div>
-
-      <div className="flex gap-7">
+      <div className="mt-10 flex md:flex-row flex-col gap-5 md:gap-7">
         <Counter />
         <Button className="w-max-[400px]" variant="primary" type="w-xl">
-          Add to Bag 
-          {" "}
-          {price}
+          Add to Bag {price}
         </Button>
       </div>
     </div>

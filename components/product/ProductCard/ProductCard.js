@@ -29,7 +29,7 @@ const ProductCard = ({ product, variant }) => {
             </div>
         </a>
       </Link>
-      <Button variant="cart" type="w-m">
+      <Button variant="cart" type="w-m" >
         Add to Bag
         <div>{product.price}</div>
       </Button>

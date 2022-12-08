@@ -19,7 +19,7 @@ const PinkVariant = ({ root, variant }) => {
           </div>
           <div class="flex flex-col items-end justify-center gap-10 md:flex-row">
             {icons.map((icon, idx) => (
-              <PinkVariantCard icon={icon} />
+              <PinkVariantCard key={idx} icon={icon} />
             ))}
           </div>
         </div>

@@ -57,21 +57,21 @@ export default function ProductView({ product }) {
 
   return (
     <>
-      <div className=" w-[900px] min-w-[400px] ">
+      <div className=" md:w-[900px] min-w-[300px]">
         <div className="flex relative"> 
-          <div className="rotate-180 truncate absolute left-16 top">
+          <div className="rotate-180 truncate absolute md:left-16 top">
             <ChevronRight color="black" size={30} />
           </div>
           <div ref={sliderRef} className="keen-slider">
             {product.images.map((image, idx) => (
-              <div className={`keen-slider__slide number-slide${idx + 1}`}>
+              <div key={idx} className={`keen-slider__slide number-slide${idx + 1}`}>
                 <div className="w-full ">
                   <Image layout="responsive" src={image} />
                 </div>
               </div>
             ))}
           </div>
-          <div className="absolute truncate right-16 z-[100] top-[calc(50%-15px)]">
+          <div className="absolute truncate right-0 md:right-16 z-[100] top-[calc(50%-15px)]">
             <ChevronRight className=" " color="black" size={30} />
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function ProductView({ product }) {
           className="keen-slider thumbnail flex justify-center"
         >
           {product.images.map((image, idx) => (
-            <div className={`keen-slider__slide number-slide${idx + 1}`}>
+            <div key={idx} className={`keen-slider__slide number-slide${idx + 1}`}>
               <div class="hover:scale-[1.07]">
                 <Image src={image} />
               </div>

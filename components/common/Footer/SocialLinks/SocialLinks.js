@@ -8,8 +8,8 @@ const SocialLinks = () => {
   return (
     <div className="flex gap-4 md:justify-start items-center" >
         {
-            links.map((link) => (
-                <SocialLink link={link} />
+            links.map((link, idx) => (
+                <SocialLink key={idx} link={link} />
             ))
         }
     </div>
