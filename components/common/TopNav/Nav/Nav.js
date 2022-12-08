@@ -8,8 +8,8 @@ const Nav = () => {
   return (
     <nav className="h-12 border-b md:block hidden">
       <ul className="cursor-pointer flex text-xs  gap-16 justify-center items-center h-full font-semibold">
-        {links.map((link) => (
-          <Link href={link.route}>{link.label}</Link>
+        {links.map((link, idx) => (
+          <Link key={idx} href={link.route}>{link.label}</Link>
         ))}
       </ul>
     </nav>

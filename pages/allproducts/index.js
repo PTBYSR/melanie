@@ -99,8 +99,8 @@ const router = useRouter()
       </div>
       <Grid className="gap-6">
         {products.map((product, idx) => (
-          <div className="border">
-            <ProductCard key={idx} product={product} variant="medium" />
+          <div key={idx} className="border">
+            <ProductCard  product={product} variant="medium" />
           </div>
         ))}
       </Grid>

@@ -51,8 +51,8 @@ export default function Storybook() {
     <ProductView product={products[0]} />
       <Grid>
         {products.map((product, idx) => (
-          <div className="border">
-            <ProductCard key={idx} product={product} variant="large" />
+          <div key={idx} className="border">
+            <ProductCard  product={product} variant="large" />
           </div>
         ))}
       </Grid>
