@@ -17,12 +17,14 @@ export const products = [
     name: "Generation Z",
     type: "20 shades",
     price: "$28",
+    images: [product1, product1, product1],
   },
   {
     src: product3,
     name: "Cream blush & Highlight Duo",
     type: "48 shades",
     price: "$28",
+    images: [product1, product1, product1],
   },
 ];
 
