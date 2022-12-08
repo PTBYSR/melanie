@@ -55,6 +55,7 @@ export default function ProductView({ product }) {
     [ThumbnailPlugin(instanceRef)]
   );
 
+  // console.log(product[1].images)
   return (
     <>
       <div className=" md:w-[900px] min-w-[300px]">
