@@ -1,5 +1,8 @@
 import React from 'react'
 import ProductSlider from '../components/product/ProductView'
+import product1 from "../public/landing page/product1.png";
+import product2 from "../public/landing page/product2.png";
+import product3 from "../public/landing page/product3.png";
 
 export const products = [
   {
